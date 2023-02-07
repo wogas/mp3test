@@ -80,31 +80,31 @@ export default withAuth(
         files: {
         kind: 'local',
         type: 'file',
-        generateUrl: path => `https://adire.pw/wogasp/files${path}`,
+        generateUrl: path => `http://localhost:4000/files${path}`,
         serverRoute: {
-          path: 'https://adire.pw/wogasp/files',
+          path: '/files',
         },
-        storagePath: 'https://adire.pw/wogasp/files',
+        storagePath: 'public/files',
       },
   
       images: {
       kind: 'local',
       type: 'image',
-      generateUrl: path => `https://adire.pw/wogasp/images${path}`,
+      generateUrl: path => `http://localhost:4000/images${path}`,
       serverRoute: {
-        path: 'https://adire.pw/wogasp/images',
+        path: '/images',
       },
-      storagePath: 'https://adire.pw/wogasp/images',
+      storagePath: 'public/images',
     },
   
       profile_images: {
       kind: 'local',
       type: 'image',
-      generateUrl: path => `https://adire.pw/wogasp/images/profiles${path}`,
+      generateUrl: path => `http://localhost:4000/images/profiles${path}`,
       serverRoute: {
-        path: 'https://adire.pw/wogasp/images',
+        path: '/images',
       },
-      storagePath: 'https://adire.pw/wogasp/images/profiles',
+      storagePath: 'public/images/profiles',
     },
     },
     
